@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery-ui.css" >
+    <link rel="stylesheet" href="css/style.css" >
+
+   
+   
+    <title>WorkBoard</title>
+</head>
+
+<body>
+   
+    <header>
+
+        <ul>
+
+            <li> <a href=""><img src="img/WorkBoardl.png" alt="logo"> </a> </li>
+            <li> <a href=""><img src="img/bals.png" alt="bals"></a> </li>
+            <li> <a href="">чат</a> </li>
+            <li> <a href="">Профиль</a> </li>  
+            <li> <a href="">Выйти</a> </li>
+        
+        </ul>
+
+    </header>
+
+
+    <main>
+        
+       <section class="user-panel">
+            <h2>Участники</h2>
+
+            <div class="options"> 
+                <button class="addP">Добавить</button>
+            </div>
+
+            <ul class="participants">
+             <li class="item">
+                <div class="name">Эдик Егоров</div>
+                <div class="edit-name"></div>
+                <div class="save-name"></div>
+                <div class="delP"></div>
+            </li>
+            
+            
+          </ul>
+
+        </section>
+      
+       
+        <section class="task-panel">
+
+            
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Пн</a></li>
+                    <li><a href="#tabs-2">Вт</a></li>
+                    <li><a href="#tabs-3">Ср</a></li>
+                    <li><a href="#tabs-4">Чт</a></li>
+                    <li><a href="#tabs-5">Пт</a></li>
+                    <li><a href="#tabs-6">Сб</a></li>
+                </ul>
+
+
+                <div id="tabs-1" class="task">
+
+                <h2>Понедельник</h2>
+
+
+                <div class="text-task">
+                    <div class="text">Задача 1</div>   
+                </div>
+
+                <div class="options">
+                        <div class="edit-text"></div>
+                        <div class="save-text"></div>
+                    </div>
+
+                    <div class="result">
+                        <input type="checkbox" id="res1">
+                        <label for="res1">Состояние задачи:</label>
+                    </div>
+
+                <ul class="task-participants"> </ul>  
+
+                </div>
+                <!-- /.tabs1 -->
+
+                <div id="tabs-2" class="task">
+                    
+                    <h2>Вторник</h2>
+                    
+                    <div class="text-task">                        
+                        <div class="text">Задача 2</div>
+                    </div>
+
+                    <div class="options">
+                            <div class="edit-text"></div>
+                            <div class="save-text"></div>
+                        </div>
+                    
+                    <div class="result">
+                        <input type="checkbox" id="res2">
+                        <label for="res2">Состояние задачи:</label>
+                    </div>
+                    
+                    <ul class="task-participants"> </ul>  
+                
+                </div>
+                <!-- /.tabs2 -->
+
+                <div id="tabs-3" class="task">
+                    
+                    <h2>Среда </h2>
+                    
+                    <div class="text-task">                        
+                    <div class="text">Задача 3</div>   
+                </div>
+
+
+
+                <div class="options">
+                        <div class="edit-text"></div>
+                        <div class="save-text"></div>
+                    </div>
+                    
+                    <div class="result">
+                        <input type="checkbox" id="res3">
+                        <label for="res3">Состояние задачи:</label>
+                    
+                    </div>
+                    
+                    <ul class="task-participants"> </ul>
+                
+                </div>
+                <!-- /.tabs3 -->
+
+
+                <div id="tabs-4" class="task">
+                    
+                    <h2>Четверг</h2>
+                    
+                    <div class="text-task">
+                           
+                            <div class="text">Задача 4</div>
+                    </div>
+                    <div class="options">
+                            <div class="edit-text"></div>
+                            <div class="save-text"></div>
+                        </div>
+                    <div class="result">
+                        <input type="checkbox" id="res4">
+                        <label for="res4">Состояние задачи:</label>
+                    </div>
+                    
+                    <ul class="task-participants"> </ul>  
+
+                </div>
+                <!-- /.tabs4 -->
+
+                <div id="tabs-5" class="task">
+                    
+                    <h2>Пятница</h2>
+                    
+                    <div class="text-task">
+                        <div class="text">Задача 5</div>
+                     </div>
+                     <div class="options">
+                            <div class="edit-text"></div>
+                            <div class="save-text"></div>
+                        </div>
+                    <div class="result">
+                        <input type="checkbox" id="res5">
+                        <label for="res5">Состояние задачи:</label>
+                    </div>
+                    
+                    <ul class="task-participants"> </ul>  
+                
+                </div>
+                <!-- /tabs5 -->
+
+
+                <div id="tabs-6" class="task">
+                    
+                    <h2>Суббота</h2>
+                    
+                    <div class="text-task">
+                         <div class="text">Задача 6</div>
+                     </div>
+
+                    <div class="options">
+                        <div class="edit-text"></div>
+                        <div class="save-text"></div>
+                    </div>
+
+                    <div class="result">
+                        <input type="checkbox" id="res6">
+                        <label for="res6">Состояние задачи:</label>
+                    </div>
+                    
+                    <ul class="task-participants"> </ul>  
+                
+                </div>
+                <!-- /.tabs6 -->
+
+            </div>
+            <!-- /.tabs -->
+
+        </section>
+
+    </main>
+
+    
+
+
+</body>
+<!-- JavaScript -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
